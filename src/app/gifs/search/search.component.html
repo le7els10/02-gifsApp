@@ -1,6 +1,11 @@
 <div class="row p-3">
   <div class="col">
     <h5>Buscar</h5>
-    <input class="form-control" placeholder="Buscar..." />
+    <input
+      class="form-control"
+      placeholder="Buscar..."
+      (keyup.enter)="search()"
+      #txtBuscar
+    />
   </div>
 </div>
